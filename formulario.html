@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<link rel="stylesheet" href="./styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8"/>
+		<title>Contacto</title>
+	</head>
+	<body>
+        <div class="container">
+			<div class="nav change-colors">
+				<a href="index.html">index</a>
+				<a href="formulario.html">Contacto</a>
+			</div>
+            <div class="container-form">
+                <div class="formulario p-1">
+                    <form id="miFormulario" action="" method="get" onsubmit="">
+                        <h2>Contacto</h2>
+                        <div class="container-input">
+                            <label class="label">Nombre:</label>
+                            <input class="input" type="text" name="nombre" id="nombre" autocomplete=false/>
+                        </div>
+                        <div class="container-input">
+                            <label class="label">Correo:</label>
+                            <input class="input" type="mail" name="correo" id="correo" autocomplete=false/>
+                        </div>
+                        <div class="container-input">
+                            <label class="label">Contraseña:</label>
+                            <input class="input" type="password" name="pass" id="pass" autocomplete=false/>
+                        </div>
+                        <div class="container-input">
+                            <label class="label">Ciudad:</label>
+                            <select name="select" id="select" class="input">
+                                <option value="0" disabled>Selecciona</option>
+                                
+                                <option value="1">Guadalaja</option>
+                                <option value="2">Tlaquepaque</option>
+                                <option value="3">Tonalá</option>
+                                <option value="4">Zapopan</option>
+                                <option value="5">Otra</option>
+                            </select>
+                        </div>
+                        <div class="container">
+                            <label class="label">Comentario:</label>
+                            <textarea name="comentario" id="comentario" autocomplete=false></textarea>
+                        </div>
+                        <br />
+                        <div class="container">
+                            <label class="label">Genero:</label>
+                            <input type="radio" name="genero" value="hombre"> Hombre 
+                            <input type="radio" name="genero" value="mujer"> Mujer
+                            <input type="radio" name="genero" value="otro"> Otro
+                        </div>
+                        <br />
+                        <div class="container">                       
+                            <label class="label">Me interesa contratarte :</label>
+                            <input type="checkbox" id="interes" name="interes"/>
+                        </div>
+                        <div class="container">
+                            <input type="submit" value="Enviar" class="submit"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
